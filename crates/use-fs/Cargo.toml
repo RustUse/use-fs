@@ -1,0 +1,41 @@
+[package]
+name = "use-fs"
+description = "Composable facade crate for RustUse filesystem-adjacent primitives"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+documentation.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+keywords = ["filesystem", "path", "file", "directory", "utilities"]
+categories = ["filesystem", "parsing"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[features]
+default = []
+path = ["dep:use-path"]
+file-name = ["dep:use-file-name"]
+extension = ["dep:use-extension"]
+dir = ["dep:use-dir"]
+file-stem = ["dep:use-file-stem"]
+full = ["path", "file-name", "extension", "dir", "file-stem"]
+
+[dependencies]
+use-path = { workspace = true, optional = true }
+use-file-name = { workspace = true, optional = true }
+use-extension = { workspace = true, optional = true }
+use-dir = { workspace = true, optional = true }
+use-file-stem = { workspace = true, optional = true }
+
+[[test]]
+name = "facade_full"
+required-features = ["full"]
+
+[lints]
+workspace = true

@@ -1,0 +1,18 @@
+[package]
+name = "use-path"
+description = "Practical path utility primitives"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+documentation.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+keywords = ["path", "filesystem", "file", "directory", "utility"]
+categories = ["filesystem", "parsing"]
+
+[lints]
+workspace = true
