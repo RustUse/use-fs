@@ -123,7 +123,7 @@ fn split_directory_and_file_name(input: &str) -> (&str, Option<&str>) {
         Some(index) => {
             let file_name = (index + 1 < input.len()).then(|| &input[index + 1..]);
             (&input[..=index], file_name)
-        }
+        },
         None => ("", (!input.is_empty()).then_some(input)),
     }
 }

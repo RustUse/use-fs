@@ -1,5 +1,5 @@
 use use_fs::{
-    compound_extension, path, path_kind, sanitize_file_name, slug_file_stem_basic, PathKind,
+    PathKind, compound_extension, path, path_kind, sanitize_file_name, slug_file_stem_basic,
 };
 
 #[test]

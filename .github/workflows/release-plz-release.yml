@@ -1,6 +1,6 @@
 name: Release Publish Automation
 
-on:
+"on":
     push:
         branches:
             - main
@@ -27,7 +27,7 @@ jobs:
         runs-on: ubuntu-latest
         env:
             PUBLISHED_CRATES: >-
-                use-path use-file-name use-extension use-dir use-file-stem use-fs
+              use-path use-file-name use-extension use-dir use-file-stem use-fs
         steps:
             - name: Check out repository
               uses: actions/checkout@v4

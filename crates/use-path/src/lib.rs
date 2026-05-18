@@ -166,21 +166,21 @@ pub fn join_path_parts(parts: &[&str]) -> String {
             } else {
                 format!("//{}", segments.join("/"))
             }
-        }
+        },
         "/" => {
             if segments.is_empty() {
                 String::from("/")
             } else {
                 format!("/{}", segments.join("/"))
             }
-        }
+        },
         _ if !prefix.is_empty() => {
             if segments.is_empty() {
                 prefix
             } else {
                 format!("{prefix}{}", segments.join("/"))
             }
-        }
+        },
         _ => segments.join("/"),
     }
 }

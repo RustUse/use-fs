@@ -1,8 +1,8 @@
 use use_path::{
-    detect_path_separator, ensure_trailing_separator, extension_from_path, file_name_from_path,
-    is_absolute_path, is_empty_path, is_relative_path, join_path_parts, normalize_path_separators,
-    parent_path, path_kind, path_parts, split_path_parts, trim_trailing_separator, PathKind,
-    PathParts, PathSeparator,
+    PathKind, PathParts, PathSeparator, detect_path_separator, ensure_trailing_separator,
+    extension_from_path, file_name_from_path, is_absolute_path, is_empty_path, is_relative_path,
+    join_path_parts, normalize_path_separators, parent_path, path_kind, path_parts,
+    split_path_parts, trim_trailing_separator,
 };
 
 #[test]
