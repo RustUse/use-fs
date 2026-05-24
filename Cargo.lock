@@ -4,23 +4,23 @@ version = 4
 
 [[package]]
 name = "use-dir"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-extension"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-file-name"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-file-stem"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-fs"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-dir",
  "use-extension",
@@ -31,4 +31,4 @@ dependencies = [
 
 [[package]]
 name = "use-path"
-version = "0.0.1"
+version = "0.0.2"
